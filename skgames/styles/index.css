@@ -116,10 +116,26 @@ input[name="radio-slides"] {
 }
 
 .games-list .list {
+    position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 85%;
     height: 100%;
-    overflow: hidden;
+    z-index: 1;
+}
+
+.list .arrows {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% + 4.5em);
+    z-index: -1;
+}
+
+.arrows i {
+    font-size: 2em;
+    cursor: pointer;
 }
 
 .list ul {
@@ -127,24 +143,32 @@ input[name="radio-slides"] {
     column-gap: 2%;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .list .game-card {
-    display: block;
-    width: 31.6%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 24%;
     height: 100%;
+    overflow: hidden;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.685);
 }
 
 .game-card .game-img {
+    flex-shrink: 0;
     width: 100%;
     height: 50%;
-    overflow: hidden;
     background-color: white;
 }
 
 .game-img img {
-    min-height: 100%;
+    transition: transform .3s;
+}
+
+.game-card:hover .game-img > img{
+    transform: scale(1.06);
 }
 
 .game-card .game-content {
