@@ -2,18 +2,6 @@
     --primary-color: #42b5f5;
 }
 
-body{
-    min-height: 100vh;
-    user-select: none;
-}
-
-
-
-
-
-
-
-
 .container-slides {
     position: relative;
     margin: auto;
