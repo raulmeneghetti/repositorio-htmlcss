@@ -107,19 +107,17 @@ input[name="radio-slides"] {
 .games-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     padding: 5% 2%;
-    row-gap: 10px;
+    row-gap: 22px;
     width: 100%;
     height: 40%;
     background-color: var(--primary-color);
-
-    border: 2px solid black;
 }
 
 .games-list .list {
     display: flex;
-    width: 100%;
+    width: 85%;
     height: 100%;
     overflow: hidden;
 }
@@ -133,8 +131,9 @@ input[name="radio-slides"] {
 
 .list .game-card {
     display: block;
-    width: 20%;
+    width: 31.6%;
     height: 100%;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.685);
 }
 
 .game-card .game-img {
@@ -142,8 +141,6 @@ input[name="radio-slides"] {
     height: 50%;
     overflow: hidden;
     background-color: white;
-
-    border: 2px solid black;
 }
 
 .game-img img {
@@ -152,11 +149,9 @@ input[name="radio-slides"] {
 
 .game-card .game-content {
     width: 100%;
-    height: 50%;
+    height: 100%;
     padding: 6%;
     background-color: white;
-
-    border: 2px solid black;
 }
 
 .game-content .game-description {
