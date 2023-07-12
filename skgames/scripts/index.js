@@ -35,15 +35,12 @@ function selectedSlide()
 
 function slideCardGames(listNumber, arrowSide) 
 {
-    let list = document.getElementsByClassName('list'+listNumber);
+    let list = document.getElementsByClassName('list'+listNumber)[0];
 
-    let firstCard = list.getElementsByClassName('first');
+    let firstCard = list.getElementsByClassName('first')[0];
 
-    if (arrowSide == 'left')
+    switch (arrowSide)
     {
-        firstCard.style.transform = 'translateX(-100%)';
+
     }
-
-    
-
 }
