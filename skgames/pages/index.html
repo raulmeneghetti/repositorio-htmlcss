@@ -30,7 +30,9 @@
 	<main class="main">
 
 		<section class="container-slides">
+
 			<div class="mask"></div>
+
 			<input type="radio" name="radio-slides" id="radio1" checked>
 			<input type="radio" name="radio-slides" id="radio2">
 			<input type="radio" name="radio-slides" id="radio3">
@@ -60,13 +62,12 @@
 		<section class="games-list">
 
 			<div class="list">
-				<div class="arrows">
-					<i class="fa-solid fa-angle-left"></i>
-					<i class="fa-solid fa-angle-right"></i>
-				</div>
 
-				<ul>
-					<li class="game-card">
+				<ul class="list1">
+					<i class="fa-solid fa-angle-left left" onclick="slideCardGames(1, 'left')"></i>
+					<i class="fa-solid fa-angle-right right" onclick="slideCardGames(1, 'right')"></i>
+
+					<li class="game-card first">
 						<div class="game-img">
 							<img src="../images/minecraft.jpg" alt="">
 						</div>
@@ -311,13 +312,12 @@
 			</div>
 
 			<div class="list">
-				<div class="arrows">
-					<i class="fa-solid fa-angle-left"></i>
-					<i class="fa-solid fa-angle-right"></i>
-				</div>
 
-				<ul>
-					<li class="game-card">
+				<ul class="list2">
+					<i class="fa-solid fa-angle-left left" onclick="slideCardGames(2, 'left')"></i>
+					<i class="fa-solid fa-angle-right right" onclick="slideCardGames(2, 'right')"></i>
+
+					<li class="game-card first">
 						<div class="game-img">
 							<img src="../images/minecraft.jpg" alt="">
 						</div>

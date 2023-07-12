@@ -109,7 +109,7 @@ input[name="radio-slides"] {
     flex-direction: column;
     align-items: center;
     padding: 5% 2%;
-    row-gap: 22px;
+    row-gap: 30px;
     width: 100%;
     height: 40%;
     background-color: var(--primary-color);
@@ -120,47 +120,53 @@ input[name="radio-slides"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85%;
+    width: 80%;
     height: 100%;
     z-index: 1;
 }
 
-.list .arrows {
-    position: absolute;
+.list ul {
     display: flex;
-    justify-content: space-between;
-    width: calc(100% + 4.5em);
-    z-index: -1;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2%;
+    width: calc(100% - 4.5em);
+    height: 100%;
+    overflow: hidden;
 }
 
-.arrows i {
-    font-size: 2em;
+ul i {
+    position: absolute;
+    font-size: 2.4em;
     cursor: pointer;
 }
 
-.list ul {
-    display: flex;
-    column-gap: 2%;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+ul .left {
+    left: -2%;
+}
+
+ul .right {
+    right: -2%;
 }
 
 .list .game-card {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    width: 24%;
+    width: 32%;
     height: 100%;
     overflow: hidden;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.685);
 }
 
 .game-card .game-img {
-    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 50%;
     background-color: white;
+    overflow: hidden;
 }
 
 .game-img img {
@@ -173,7 +179,7 @@ input[name="radio-slides"] {
 
 .game-card .game-content {
     width: 100%;
-    height: 100%;
+    height: 50%;
     padding: 6%;
     background-color: white;
 }

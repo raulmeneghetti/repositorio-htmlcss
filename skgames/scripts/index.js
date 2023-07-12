@@ -32,3 +32,18 @@ function selectedSlide()
         }
     }
 }
+
+function slideCardGames(listNumber, arrowSide) 
+{
+    let list = document.getElementsByClassName('list'+listNumber);
+
+    let firstCard = list.getElementsByClassName('first');
+
+    if (arrowSide == 'left')
+    {
+        firstCard.style.transform = 'translateX(-100%)';
+    }
+
+    
+
+}
